@@ -334,7 +334,7 @@ public class Viewer extends java.applet.Applet implements MouseListener, MouseMo
 		m_playAudio = new PlayAudio();
 		m_haveAudio = true;
 		m_playAudio.start();
-		m_strStorageFolderPath = System.getProperty("user.home") + System.getProperty("file.separator") + "My Documents";
+		m_strStorageFolderPath = System.getProperty("user.home");
 		m_aviRecord = new AviRecord(m_resolutionJpg,m_haveAudio,m_strStorageFolderPath,m_MaxRecordSize,this);
 		m_aviRecord.start();
 			setCurrentURL(m_mainURL);
